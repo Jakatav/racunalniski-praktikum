@@ -376,23 +376,24 @@ Na primeru urnika si oglejmo, katere so smiselne operacije:
 opravimo na nekem koraku optimizacijskega postopka. Okolica zamenjave dveh srečanj v urniku
 je torej množica vseh možnih zamenjav srečanj v trenutnem urniku.
 %
+
 \emph Sistem okolic je množica vseh možnih sprememb, ki jih lahko z vsemi operacijami iz
 okolic sistema opravimo na nekem koraku optimizacijskega postopka. Oboroženi z novimi pojmi
 se podajmo v naslednje vrstice.
-%
+
 \subsubsection{Lokalno vzpenjanje}
-%
+
 Lokalno vzpenjanje temelji na opazkah, da izbira širšega sistema okolic prinaša kakovostnejše
 rešitve. Sistem okolic v primeru urnika predstavljajo prej omenjene operacije vstavljanja,
 brisanja ter zamenjave srečanj. Osnovno lokalno vzpenjanje se teoretično sploh ne razlikuje
 od požrešne metode, saj tudi pri tem postopku iz okolice vzamemo najboljšo rešitev. Kaj pa,
 če bi lokalno vzpenjanje nadgradili?
-%
+
 Do sedaj smo vedno dopuščali le izbiro najboljše možne rešitve iz določene okolice, kar nas
 je hitro pripeljalo do lokalnega maksimuma, iz katerega pa se je bilo nemogoče izviti, saj
 je najboljša rešitev iz okolice lokalnega maksimuma ponavadi kar lokalni maksimum sam.
 Nadgradnja lokalnega vzpenjanja je jasno razvidna iz naslednje sheme.
-%
+
 \begin{verbatim}
 (1) Izvajaj dokler...
 {
@@ -408,7 +409,7 @@ Nadgradnja lokalnega vzpenjanja je jasno razvidna iz naslednje sheme.
 \noindent
 Nadobudnežem priporočamo, da najprej sami razmislijo, kaj je globja vsebina posameznih
 korakov, in si šele nato ogledajo njihov natančen opis.
-%
+
 \begin{enumerate}
 
    \item Zunanjo zanko izvajamo, dokler ne dosežemo enega izmed ustavitvenih pogojev.
